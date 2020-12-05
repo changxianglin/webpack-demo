@@ -18,11 +18,11 @@ touch index.html
 
 ## 3. 创建 index.js 内容
 
-```
+```javascript
 function component() {
-  var element = document.createElement('div');
+  var element = document.createElement("div");
 
-  element.innerHTML = 'Hello Webpack!'
+  element.innerHTML = "Hello Webpack!";
 
   return element;
 }
@@ -32,8 +32,8 @@ document.body.appendChild(component());
 
 ## 4. 创建 index.html 内容
 
-```
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html>
   <head>
     <title>Webpack</title>
@@ -46,7 +46,7 @@ document.body.appendChild(component());
 
 ## 5. 确定 package.json 内容
 
-```
+```json
 {
   "name": "webpack-demo",
   "version": "1.0.0",
@@ -68,27 +68,27 @@ document.body.appendChild(component());
 
 ## 6. 创建配置文件 webpack.config.js
 
-```
+```sh
 touch webpack.config.js
 ```
 
 ## 7. 配置 webpack.config.js
 
-```
-const path = require('path');
+```javascript
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+  },
 };
 ```
 
 ## 8. 运行 npm start 创建 bundle.js
 
-```
+```sh
 npm run start
 ```
 
