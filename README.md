@@ -93,3 +93,5 @@ npm run start
 ```
 
 > 在 dist 中会产生一个 bundle.js 文件，在浏览器中打开 index.html 可得结果。
+
+- [github 源码地址](https://github.com/changxianglin/webpack-demo)
