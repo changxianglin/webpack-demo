@@ -1,6 +1,6 @@
 ## 1. 创建项目并按照依赖
 
-```
+```sh
 mkdir webpack-demo && webpack-demo
 npm init --yes
 npm install webpack webpack-cli --save-dev
@@ -8,7 +8,7 @@ npm install webpack webpack-cli --save-dev
 
 ## 2. 创建目录及文件
 
-```
+```sh
 mkdir src && cd src
 touch index.js
 cd ..
